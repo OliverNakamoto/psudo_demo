@@ -1,27 +1,7 @@
 # Pseudo README
 
-This VS Code extension transforms all open files into `.txt` files using ChatGPT (gpt-4o).
-Each file is sent to the OpenAI API with a prompt, and the resulting output is saved 
-as a new `.txt` file next to the original.
+This is the demo for psudo tool. All you need for this extension to work for you is a google api key, which is free for a large amount fo tokens. Just add that to the launch.json file and then download this extension on your computer and then you can use it. Activate import project from command pallet with "Import project to psudomode" and then manually save files to apply changes made in psudo to the code.
 
-## Features
+## THINGS that dont work
 
-- Command: "Transform Open Files to .txt via ChatGPT"
-- Sends each open file to ChatGPT 4o
-- Creates `.txt` versions of each file with summarized content
-
-## Requirements
-
-- Requires an OpenAI API key to be available as the `OPENAI_API_KEY` environment variable
-
-## Known Issues
-
-- No error shown if the API key is missing
-- Does not handle rate limiting or streaming yet
-
-## Release Notes
-
-### 0.0.1
-
-- Initial version: transforms files to `.txt` using GPT-4o
-
+- the translate is someitmes buggy since the json parsing is subpar at best, so if model outputs some escape characters then sometimes the updated coding file is just cut off, in that case just ctr+z and then save the code file to update the psudo and then change psudo again. This is just an mvp.
